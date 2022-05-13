@@ -46,7 +46,7 @@ img {
 
 body {
     font-family: 'Roboto' ,sans-serif;
-    background-color: var(--body-color)
+    background-color: var(--body-color);
     color: var(--title-text-color);
     letter-spacing: 0.03em;
 }
@@ -202,11 +202,22 @@ header {
 /*-------- Стилизация главной страницы сайта ----------*/
 
 .hero {
-    background-color: #2F303A;
+    /* background-color: #2F303A; */
     
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+    ),
+    url('/images/hero.jpg');
 }
 
 .hero-tittle {
@@ -241,6 +252,7 @@ header {
 }
 
 
+
 /*-------------------- Стилизация заголовка h2 -------------------*/
 
 /* .privilege,
@@ -268,6 +280,7 @@ header {
     font-size: 14px;
     line-height: 1.14;
     margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 .privilege p {
@@ -275,6 +288,49 @@ header {
     line-height: 1.71;
 }
 
+.item-first::before {
+    display: block;
+    content: '';
+    height: 120px;
+    background-image: url('/images/antenna1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+}
+
+.item-second::before {
+    display: block;
+    content: '';
+    height: 120px;
+    background-image: url('/images/clock1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+}
+
+.item-third::before {
+    display: block;
+    content: '';
+    height: 120px;
+    background-image: url('/images/diagram1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+}
+
+.item-fourth::before {
+    display: block;
+    content: '';
+    height: 120px;
+    background-image: url('/images/astronaut1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+}
 /*----------------- Стилизация чем мы занимаемся ------------------*/
 
 .about {
