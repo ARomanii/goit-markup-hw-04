@@ -133,7 +133,7 @@ header {
 .nav-info {
     display: flex;
     margin-left: auto;
-}
+} 
 
 .site-navv {
     color: var(--title-text-color);
@@ -153,8 +153,12 @@ header {
     display: flex;
 }
 
-.info+.info {
+.info {
     margin-left: 50px;
+}
+
+.site-navv-list {
+    display: flex;
 }
 
 
@@ -288,7 +292,7 @@ header {
     line-height: 1.71;
 }
 
-.item-first::before {
+/* .item-first::before {
     display: block;
     content: '';
     height: 120px;
@@ -330,7 +334,7 @@ header {
     background-position: center;
     background-color: #F5F4FA;
     border-radius: 4px;
-}
+} */
 /*----------------- Стилизация чем мы занимаемся ------------------*/
 
 .about {
@@ -390,7 +394,7 @@ header {
     display: flex;
 }
 
-.team-list li {
+.team-list-li {
     margin-right: 30px;
     background-color: var(--body-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
