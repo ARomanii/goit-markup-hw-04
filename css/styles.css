@@ -171,7 +171,25 @@ header {
     color: var(--accent-color);
 }
 
+.studio-link {
+    display: flex;
+    align-items: center;
+}
 
+.studio-list {
+    display: flex;
+    align-items: center;
+}
+
+
+.studio-icon {
+    margin-right: 10px;
+}
+
+.studio-item:hover .studio-icon,
+.studio-item:focus .studio-icon {
+     fill: var(--accent-color);
+}
 /* ---------Прячем заголовки-------------------------- */
 
 .visually-hidden {
@@ -221,7 +239,7 @@ header {
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
     ),
-    url('./images/hero.jpg');
+    url('/images/hero.jpg');
 }
 
 .hero-tittle {
@@ -335,6 +353,22 @@ header {
     background-color: #F5F4FA;
     border-radius: 4px;
 } */
+
+.privilege-div {
+    height: 120px;
+    background-color: #F5F4FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.privilege-icon {
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+    
+}
 /*----------------- Стилизация чем мы занимаемся ------------------*/
 
 .about {
@@ -385,6 +419,14 @@ header {
     margin-bottom: 10px;
 }
 
+.socials-title {
+    margin-bottom: 16px;
+}
+
+.socials-icons {
+    fill: #AFB1B8;  
+}
+
 .team p {
     font-size: 16px;
     line-height: 1.19;
@@ -409,6 +451,96 @@ header {
 
 .team-list li:last-child {
     margin-right: 0;
+}
+
+.socials-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials-link {
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    width: 44px;
+    height: 44px;
+    background-color;: var(--body-color);
+    border-radius: 50%;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+    background-color: var(--accent-color);
+}
+
+.socials-link:hover .socials-icons,
+.socials-link:focus .socials-icons {
+    fill: var(--body-color);
+}
+
+
+.socials-item:not(:last-child) {
+    margin-right: 10px;
+}
+/* ---------Секция наши клиенты-------------------------- */
+
+.customers {
+    padding-bottom: 94px;
+    padding-top: 94px;
+    }
+
+
+.customers-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.67;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: var(--title-text-color);
+    margin-bottom: 50px;
+
+}
+
+
+.customers-list {
+    display: flex;
+}
+
+.customers-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 170px;
+    height: 92px;
+
+
+    border: 1px solid #AFB1B8;
+        border-radius: 4px;
+}
+
+.customers-item {
+    margin-right: 30px;
+}
+
+.customers-item:last-child {
+    margin-right: 0;
+}
+
+.customers-icons {
+    fill: #AFB1B8;
+}
+
+
+.customers-link:hover {
+    border-color: var(--accent-color);
+}
+
+.customers-link:hover .customers-icons,
+.customers-link:focus .customers-icons {
+    fill: var(--accent-color)
 }
 /*------------------- Стилизация кнопок портфолио ---------------------*/
 .portfolio {
@@ -549,4 +681,19 @@ address {
 
 .footer-address {
     margin-bottom: 9px;
+}
+
+.footer-title {
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+    font-size: 14px;
+
+}
+
+.footer-title-div {
+    display: flex;
 }
