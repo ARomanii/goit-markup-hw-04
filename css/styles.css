@@ -465,7 +465,7 @@ header {
     justify-content: center ;
     width: 44px;
     height: 44px;
-    background-color;: var(--body-color);
+    background-color: var(--body-color);
     border-radius: 50%;
 }
 
